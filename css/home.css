@@ -78,7 +78,7 @@
 }
 .menuBlock {
   width: 94px;
-  height: 9vh;
+  min-height: 9vh;
   background: #ffc700;
 }
 .navLink {
@@ -88,6 +88,9 @@
   text-transform: uppercase;
   color: #3e3e3e;
   margin-right: 15%;
+}
+.homeHeaderRight {
+  min-height: 9vh;
 }
 .navLink:hover {
   color: #f37598;
@@ -241,3 +244,4 @@
     background-attachment: fixed;
   }
 }
+
