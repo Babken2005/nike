@@ -1,0 +1,243 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.homeContentBlock {
+  width: 100%;
+  height: 91vh;
+  transform: translateY(9vh);
+}
+.homeContentLeft {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  background-color: #fffad0;
+}
+.contentLeftCard {
+  width: max-content;
+  position: absolute;
+  z-index: 100;
+  left: 15%;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.h4TxtBlock {
+  width: 120px;
+  min-height: 30px;
+  border-bottom: 1px solid #00a79d;
+  margin-bottom: 20px;
+}
+.h4TxtBlock h4 {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #00a79d;
+}
+.contentLeftCard h1 {
+  font-family: Bebas Neue;
+  font-weight: normal;
+  font-size: 126px;
+  line-height: 125px;
+  max-width: 90%;
+  text-transform: uppercase;
+  color: #1f170a;
+}
+.contentLeftCard h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #ff9a00;
+}
+.buyNowBtn {
+  width: 172px;
+  height: 62px;
+  justify-content: space-evenly;
+  background: linear-gradient(107.81deg, #0047ff -0.31%, #ec00e2 100%);
+  box-shadow: 0px 40px 60px rgba(95, 42, 243, 0.2);
+}
+.buyNowBtn h2 {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.homeContentRight {
+  position: relative;
+  width: 65%;
+  height: 100%;
+  background: linear-gradient(108.22deg, #fbff41 -0.67%, #ec00e2 100%);
+}
+.homeHeader {
+  position: fixed;
+  width: 100%;
+  min-height: 9vh;
+  justify-content: space-between;
+  background-color: #fffff5;
+  z-index: 1000;
+}
+.menuBlock {
+  width: 94px;
+  height: 9vh;
+  background: #ffc700;
+}
+.navLink {
+  transition: color 0.2s linear;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #3e3e3e;
+  margin-right: 15%;
+}
+.navLink:hover {
+  color: #f37598;
+}
+.homeHeaderLeft img {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+.homHeaderRightButtons {
+  min-width: 190px;
+}
+.linkButton {
+  width: 39px;
+  height: 39px;
+  border-radius: 100%;
+  background: #ffffff;
+  box-shadow: 5px 5px 20px rgba(0, 0, 1, 0.05);
+  margin: 5%;
+}
+.spherePng {
+  position: absolute;
+  width: 55%;
+  border-radius: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.shoosePng {
+  position: absolute;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.sbTxt {
+  width: 18%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+.socBlock {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 214px;
+  height: 54px;
+  background: linear-gradient(
+    273.64deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.12) 93.23%,
+    rgba(255, 255, 255, 0.24) 100%
+  );
+  opacity: 0.6;
+  backdrop-filter: blur(370px);
+}
+.mobShoose {
+  display: none;
+}
+.mobileMenu {
+  z-index: 2000;
+  display: none;
+  width: 98%;
+  height: 99vh;
+  position: fixed;
+  background-color: white;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.mobileMenuHeader {
+  position: fixed;
+  width: 75px;
+  height: 9vh;
+  background-color: #ffc700;
+  right: 0;
+  z-index: 2050;
+  display: none;
+}
+.mobileMenuParent {
+  text-align: center;
+}
+.mobileMenuParent p {
+  font-size: 2.2em;
+  font-family: Bebas Neue;
+  line-height: 70px;
+}
+@media (max-width: 900px) {
+  .homeHeaderClosed {
+    display: none;
+  }
+  .opened {
+    display: flex;
+  }
+  .mobShoose {
+    display: unset;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+  }
+  .socBlock {
+    max-width: 65%;
+  }
+  .navLink {
+    display: none;
+  }
+  .menuBlock {
+    width: 75px;
+  }
+  .homeContentBlock {
+    transform: unset;
+    height: 100vh;
+  }
+  .homeHeaderLeft img {
+    width: 62px;
+    margin-left: 30%;
+  }
+  .homeContentRight img {
+    display: none;
+  }
+  .contentLeftCard h1 {
+    font-size: 4.2em;
+    line-height: unset;
+  }
+  .contentLeftCard h3 {
+    font-size: 1.1em;
+  }
+  .contentLeftCard h4 {
+    font-size: 1em;
+  }
+  .buyNowBtn {
+    width: 136px;
+    height: 50px;
+  }
+  .buyNowBtn h2 {
+    font-size: 0.85em;
+  }
+  .homeHeader {
+    min-height: 9vh;
+  }
+  .homeContentRight {
+    background-attachment: fixed;
+  }
+}

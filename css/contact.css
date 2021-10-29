@@ -1,0 +1,79 @@
+.contact {
+  width: 100%;
+  height: 50vh;
+  background: #02083c;
+}
+.contactBlock {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.contactBlockParent h4 {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 400;
+}
+.contactBlockParent h2 {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.contactBlockParent p {
+  font-size: 14px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 300;
+}
+.whiteLogo {
+  margin-bottom: 20px;
+}
+.contactBlockSocImg {
+  cursor: pointer;
+  margin-right: 30px;
+}
+.line {
+  width: 82.5%;
+  margin-left: 8.75%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+.contactBottom p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 200;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.contactBottomContent {
+  width: 100%;
+  text-align: center;
+}
+.contactParent {
+  width: 100%;
+}
+@media (max-width:900px) {
+  .contact {
+    height: unset;
+  }
+  .contactBlock {
+    display: block;
+  }
+  .contactParent {
+    max-width: 90%;
+  }
+  .whiteLogo {
+    width: 62px;
+  }
+  .contactBlockParent {
+    margin-top: 20px;
+  }
+  .contactBottomContent {
+    margin-bottom: 25px;
+  }
+}

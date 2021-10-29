@@ -1,0 +1,98 @@
+.categorys {
+  width: 100%;
+}
+.productsBlock {
+  margin-bottom: calc(150px - 2.5%);
+}
+.categorysTxtBlock {
+  text-align: center;
+  margin-top: 150px;
+}
+.categorysTxtBlock h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(107.81deg, #0047ff -0.31%, #ec00e2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+}
+.categorysTxtBlock h1 {
+  font-family: Bebas Neue;
+  font-weight: normal;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #1f170a;
+}
+.product {
+  max-width: 265px;
+  width: 18%;
+  background: #ffffff;
+  box-shadow: 30px 20px 45px rgba(0, 0, 1, 0.03);
+  margin: 2.5%;
+}
+.productImg {
+  width: 239px;
+}
+.productColorsSphere {
+  width: 12.43px;
+  height: 12.43px;
+  border-radius: 100%;
+  margin: 5px;
+  cursor: pointer;
+}
+.productTitle {
+  font-family: Bebas Neue;
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3a2e39;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.productPrice {
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3d00;
+}
+.productBottom {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.addToCartBtn {
+  width: 126px;
+  height: 36px;
+  border: 1px solid transparent;
+  border-image-source: linear-gradient(107.81deg, #0047ff -0.31%, #ec00e2 100%);
+  border-image-slice: 1;
+  justify-content: space-evenly;
+}
+.addToCartBtn p {
+  background: linear-gradient(107.81deg, #0047ff -0.31%, #ec00e2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+text-transform: uppercase
+}
+@media (max-width:900px) {
+  .categorysTxtBlock h1 {
+    font-size: 3em;
+  }
+  .productsBlock {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .product {
+    width: unset;
+    max-width: 95%;
+  }
+  .categorysTxtBlock {
+    margin-top: 75px;
+  }
+  .productsBlock {
+    margin-bottom: calc(75px + 2.5%);
+  }
+}

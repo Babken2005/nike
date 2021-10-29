@@ -1,0 +1,89 @@
+.slider {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+.sliderLeft {
+  width: 50%;
+  height: 100%;
+  background: url('../images/sliderLeft.png') center no-repeat;
+  background-size: cover;
+}
+.sliderLeftLayer {
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  background: url('../images/sliderLeft-1.png') center no-repeat;
+  background-size: cover;
+}
+.sliderRightLayer {
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+  background: url('../images/sliderRight-2.jpg') center no-repeat;
+  background-size: cover;
+}
+.sliderRight {
+  width: 50%;
+  height: 100%;
+  background: url('../images/sliderRight.png') center no-repeat;
+  background-size: cover;
+}
+.sliderBlock {
+  z-index: 200;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 626.44px;
+  height: 301px;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0.95;
+  backdrop-filter: blur(40px);
+}
+.sliderBlockParent h1 {
+  font-family: Bebas Neue;
+font-style: normal;
+font-weight: normal;
+font-size: 60px;
+text-align: center;
+text-transform: uppercase;
+color: #1F170A;
+margin-bottom: 25px;
+}
+.buyNowBtn h4 {
+  font-size: 15px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+font-weight: 500;
+}
+@media (max-width:900px) {
+  .sliderBlock {
+    width: 95%;
+    height: unset;
+    bottom: 50%;
+  }
+  .sliderBlockParent h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+  .sliderBtn {
+    margin-bottom: 15px;
+  }
+  .slider {
+    display: block;
+    height: unset;
+  }
+  .sliderLeft {
+    width: 100%;
+    height: 45vh;
+  }
+  .sliderRight {
+    width: 100%;
+    height: 45vh;
+  }
+}

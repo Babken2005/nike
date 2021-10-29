@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  fill: currentColor;
+  font-family: 'Poppins', sans-serif;
+}
+.a-c {
+  display: flex;
+  align-items: center;
+}
+.j-c {
+  display: flex;
+  justify-content: center;
+}
+.c-p {
+  cursor: pointer;
+}
+.d-f {
+  display: flex;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
